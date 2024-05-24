@@ -1,0 +1,80 @@
+button{
+  background-color: grey;
+  color: white;
+  border-radius: 30px 30px;
+  padding: 8px;
+  margin: 1px;
+  
+}
+
+ form {
+   background-color: darkgray;
+   display: inline-grid;
+   padding: 3px;
+   border: 1px transparent;
+   border-radius: 15px 15px 15px;
+   box-sizing: border-box;
+   box-shadow: 10px 10px 10px silver;
+ }
+ label {
+   padding: 5px;
+ }
+ body .library {
+ margin: 0;
+ padding: 0;
+ display: grid;
+ grid-template-columns: repeat(2, 250px);
+ grid-template-rows: repeat(2, 350px);
+ background-color: #f4f4f4;
+ font-family: Arial, sans-serif;
+}
+
+.container {
+ max-width: 800px;
+ margin: 30px auto;
+ padding: 20px;
+ background-color: grey;
+ box-shadow: 0px 0px 10px black;
+}
+
+
+.pageTitle {
+ justify-content: center;
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.book {
+ background-color: rgb(26, 47, 68);
+ padding: 20px;
+ margin-bottom: 20px;
+ border-radius: 5px;
+ box-shadow: 0px 0px 5px whitesmoke;
+}
+
+.book h3 {
+ margin-top: 0;
+ font-size: 1.5rem;
+ color: whitesmoke;
+}
+
+.details p {
+ margin: 15px;
+ font-size: 1rem;
+ color: whitesmoke;
+}
+
+#mainBtn{
+ background-color: #8d6d84;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ font-size: 1rem;
+ cursor: pointer;
+}
+
+button:hover {
+ background-color: #555;
+ transition: 1.0s;
+}

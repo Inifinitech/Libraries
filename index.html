@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  
+</head>
+<body>
+  <div class="pageTitle">
+    <h1>Book Gallery</h1>
+</div>
+   <button id="mainBtn" onclick="showDialogElement()">New book</button>
+   <dialog id="dialog">
+     <div class="anywhere">
+        <div class="title">
+            <p>Contribute: Add a new book</p>
+        </div>
+     <form method="formdialog">
+       <label for="title">Title:
+       <input type="text" name="title" id="title" required>
+       </label>
+       <label for="author">Author:<input type="text" name="author" id="author" required>
+       </label>
+       <label for="number">Pages:<input type="number" name="pages" id="number">
+        </label>
+       <label for="read">Read<input type="radio" name="read" id="read">
+        </label>
+       <label for="not">Not Read<input type="radio" name="read" id="read">
+        </label>
+       <button type="submit" value="default">Add</button>
+       <button type="button" onclick="closeDialogElement()">cancel</button>
+     </form>
+   </dialog>
+   <div class="library">
+    
+  <div class="book fstbook">
+      <h3>Arsene Lupin</h3>
+      <div class="details">
+          <p>Author: Maurice Leblanc</p>
+          <p>Publisher: Galileo Publishers</p>
+          <p>Pages: 109</p>
+      </div>
+      <div class="bookBtns">
+        <button>Read</button>
+        <button>Remove</button>
+      </div>
+  </div>
+  <div class="book sndbook">
+      <h3>The Richest Man in Babylon</h3>
+      <div class="details">
+          <p>Author: George S. Clason</p>
+          <p>Publisher: Penguin Group</p>
+          <p>Pages: 416</p>
+      </div>
+      <div class="bookBtns">
+        <button>Read</button>
+        <button>Remove</button>
+      </div>
+  </div>
+  <div class="book trdbook">
+      <h3>The 5:00am Club</h3>
+      <div class="details">
+          <p>Author: Robin Sharma</p>
+          <p>Publisher: HarperCollins Publishers</p>
+          <p>Pages: 336</p>
+      </div>
+      <div class="bookBtns">
+        <button>Read</button>
+        <button>Remove</button>
+      </div>
+  </div>
+  <div class="book fthbook">
+      <h3>Percy Jackson And The Lightning Thief</h3>
+      <div class="details">
+          <p>Author: Rick Riordan</p>
+          <p>Publisher: Miramax Group</p>
+          <p>Pages: 368</p>
+          <div class="bookBtns">
+            <button>Read</button>
+            <button>Remove</button>
+          </div>
+      </div>
+   </div>
+   </div>
+  </div>
+<script>
+  const clicker = document.getElementById("dialog");
+  const anywhere = document.querySelector(".anywhere")
+  function showDialogElement() {
+    clicker.showModal();
+  }
+  
+  function closeDialogElement() {
+    clicker.close();
+  }
+
+  clicker.addEventListener("click", (e) => {
+    if(!anywhere.contains(e.target)){
+      dialog.close()
+    }
+    
+  })
+</script> 
+</body>
+</html>
+   
